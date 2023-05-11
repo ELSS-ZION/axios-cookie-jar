@@ -10,7 +10,6 @@ declare module 'axios' {
 	}
 }
 
-
 export function setupCookieJar<T extends AxiosStatic | AxiosInstance>(axios: T, cookieJar: CookieJar=new CookieJar()): T {
 	if (axios.__cookieJarRequestMiddlewareId != undefined) {
 		axios.interceptors.request.eject(axios.__cookieJarRequestMiddlewareId)
@@ -57,4 +56,4 @@ export function setupCookieJar<T extends AxiosStatic | AxiosInstance>(axios: T, 
 
 setupCookieJar(axios)
 
-export default {}
+export * from 'tough-cookie'

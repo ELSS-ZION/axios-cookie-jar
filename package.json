@@ -1,6 +1,6 @@
 {
   "name": "axios-cookie-jar",
-  "version": "1.0.7",
+  "version": "1.2.0",
   "description": "setup cookie jar to axios",
   "keywords": [
     "axios",
@@ -32,6 +32,7 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "tough-cookie": "^4.1.2"
+    "tough-cookie": "^4.1.2", 
+    "@types/tough-cookie": "^4.0.2"
   }
 }

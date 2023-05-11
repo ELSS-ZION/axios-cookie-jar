@@ -43,6 +43,21 @@ async function main() {
 main()
 ```
 
+```js
+import axios from 'axios'
+import { setupCookieJar, CookieJar } from 'axios-cookie-jar'
+
+async function main() {
+	const cj = new CookieJar()
+	await cj.setCookie('aaaa=1111', 'http://www.google.com')
+	setupCookieJar(axios, cj)
+	await axios.get('http://www.google.com')
+	console.log(axios.cookieJar?.toJSON())
+}
+
+main()
+```
+
 ## License
 
 [MIT (c) 3846masa](./LICENSE)

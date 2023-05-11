@@ -8,5 +8,4 @@ declare module 'axios' {
     }
 }
 export declare function setupCookieJar<T extends AxiosStatic | AxiosInstance>(axios: T, cookieJar?: CookieJar): T;
-declare const _default: {};
-export default _default;
+export * from 'tough-cookie';
