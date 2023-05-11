@@ -13,7 +13,11 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Elss Zion",
+  "author": "Elss Zion <elsszion@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ELSS-ZION/axios-cookie-jar"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/tough-cookie": "^4.0.2",

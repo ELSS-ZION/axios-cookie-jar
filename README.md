@@ -10,7 +10,7 @@ npm i axios axios-cookie-jar
 
 ## Usage
 
-```ts
+```js
 import axios from 'axios';
 import 'axios-cookie-jar';
 
@@ -22,7 +22,7 @@ async function main() {
 main()
 ```
 
-```ts
+```js
 import axios from 'axios';
 import { setupCookieJar } from 'axios-cookie-jar';
 
