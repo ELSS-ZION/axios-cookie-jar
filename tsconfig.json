@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "lib": [
+      "ESNext"
+    ],
+    "module": "CommonJS",
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "target": "ESNext",
+    "types": [
+      "@types/node"
+    ],
+    "verbatimModuleSyntax": false
+  },
+  "include": [
+    "src/**/*"
+  ]
+}

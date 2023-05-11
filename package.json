@@ -1,6 +1,6 @@
 {
   "name": "axios-cookie-jar",
-  "version": "1.0.1",
+  "version": "1.0.7",
   "description": "setup cookie jar to axios",
   "keywords": [
     "axios",
@@ -9,8 +9,14 @@
     "cookies",
     "tough-cookie"
   ],
-  "main": "index.js",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
+    "prebuild": "rimraf dist",
+    "build": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Elss Zion <elsszion@gmail.com>",
@@ -20,9 +26,12 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/tough-cookie": "^4.0.2",
+    "@types/node": "^20.1.2",
     "axios": "^1.4.0",
-    "tough-cookie": "^4.1.2",
+    "rimraf": "^5.0.0",
     "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "tough-cookie": "^4.1.2"
   }
 }
