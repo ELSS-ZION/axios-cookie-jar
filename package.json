@@ -1,0 +1,24 @@
+{
+  "name": "axios-cookie-jar",
+  "version": "1.0.0",
+  "description": "setup cookie jar to axios",
+  "keywords": [
+    "axios",
+    "cookie",
+    "cookiejar",
+    "cookies",
+    "tough-cookie"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elss Zion",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/tough-cookie": "^4.0.2",
+    "axios": "^1.4.0",
+    "tough-cookie": "^4.1.2",
+    "typescript": "^5.0.4"
+  }
+}
