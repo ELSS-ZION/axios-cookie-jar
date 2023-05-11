@@ -27,14 +27,14 @@ import axios from 'axios';
 import { setupCookieJar } from 'axios-cookie-jar';
 
 async function main() {
-    const instance = axios.create({
-        proxy: {
-            protocol: 'http',
-            host: '127.0.0.1',
-            port: 8888
-        }
-    })
-    setupCookieJar(instance)
+	const instance = axios.create({
+		proxy: {
+			protocol: 'http',
+			host: '127.0.0.1',
+			port: 8888
+		}
+	})
+	setupCookieJar(instance)
 
 	await instance.get('http://www.google.com')
 	console.log(instance.cookieJar?.getCookiesSync('http://www.google.com'))
