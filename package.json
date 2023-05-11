@@ -1,6 +1,6 @@
 {
   "name": "axios-cookie-jar",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "setup cookie jar to axios",
   "keywords": [
     "axios",
